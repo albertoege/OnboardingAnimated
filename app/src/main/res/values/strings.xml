@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OnboardingAnimated</string>
+    <string name="welcome_to_your_amazing_app">Welcome to your amazing App</string>
+    <string name="avoid_boring_onboardings">Avoid boring onboardings</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary"
+        android:orientation="vertical"
+        tools:context=".OnboardingActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="@string/welcome_to_your_amazing_app"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            tools:scaleX="1"
+            tools:scaleY="1" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_onboarding"
+            tools:ignore="ContentDescription"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvTitle"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="HardcodedText">
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:text="@string/avoid_boring_onboardings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+                android:textSize="20sp"
+                tools:scaleX="1"
+                tools:scaleY="1" />
+
+            <include
+                android:id="@+id/customViewButtons"
+                layout="@layout/custom_view_buttons" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
